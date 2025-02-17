@@ -8,7 +8,7 @@ class Solution:
             str_x = str_x[::-1]
 
         int_x = int(str_x)
-        if int_x > 2**31-1 | int_x < -2**31:
+        if int_x > 2**31-1 or int_x < -2**31:
             return 0
         return int_x
 
